@@ -1,0 +1,142 @@
+.order-add {
+  width: 100%;
+  padding: 25px;
+  background: #f8fafc;
+  min-height: 100vh;
+}
+
+.order-add h3 {
+  font-size: 28px;
+  color: #222;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.order-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.order-item {
+  display: grid;
+  grid-template-columns: 80px 2.5fr 1fr 1fr 180px;
+  align-items: center;
+  gap: 20px;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.order-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  background: #fff5f3;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+.order-item-food {
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.order-item-name {
+  font-size: 16px;
+  font-weight: 700;
+  color: #374151;
+  margin-bottom: 6px;
+}
+
+.order-item-address {
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.order-item-address p {
+  margin: 2px 0;
+}
+
+.order-item-phone {
+  font-weight: 500;
+  color: #4b5563;
+}
+
+.order-item > p {
+  font-weight: 600;
+  color: #374151;
+}
+
+.order-item select {
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 1px solid #ff6b4a;
+  background: #fff4f1;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: 0.3s;
+}
+
+.order-item select:hover,
+.order-item select:focus {
+  border-color: tomato;
+  background: #ffe8e4;
+}
+
+@media (max-width: 900px) {
+  .order-item {
+    grid-template-columns: 70px 1fr;
+    gap: 15px;
+  }
+
+  .order-item img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .order-item > p,
+  .order-item select {
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .order-add {
+    padding: 15px;
+  }
+
+  .order-add h3 {
+    font-size: 22px;
+  }
+
+  .order-item {
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .order-item-food,
+  .order-item-name,
+  .order-item-address,
+  .order-item-phone {
+    font-size: 13px;
+  }
+
+  .order-item select {
+    font-size: 13px;
+    padding: 8px;
+  }
+}
