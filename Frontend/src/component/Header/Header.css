@@ -1,0 +1,53 @@
+.header {
+  height: 38vw;
+  margin: 5px auto;
+  background: url("../../image/banner.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  border-radius: 18px;
+}
+
+.header-contents {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1.5vm;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  color: white;
+  animation: slideIn 3s;
+}
+
+.header-contents h2 {
+  color: white;
+  font-size: 40px;
+}
+.header-contents p {
+  color: white;
+  font-size: 20px;
+}
+.header-contents button {
+  background-color: #d7e8d7;
+  color: black;
+  padding: 9px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+
+  font-size: 16px;
+  font-weight: bold;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease; /* Smooth transitions */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+.button:hover {
+  background-color: #0ac914;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
