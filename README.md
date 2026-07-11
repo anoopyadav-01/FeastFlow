@@ -71,7 +71,7 @@ myreactproject_01/
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/anoopyadav-01/FeastFlow.git
 
 ```
 
