@@ -10,28 +10,18 @@ import cartRouter from "./routes/cartRoute.js";
 import orderRouter from "./routes/orderRoute.js";
 import UserRouter from "./routes/userRoute.js";
 
-//app config
-
 const app = express();
 const port = 4000;
 
-//middelware
-
 app.use(express.json());
 app.use(cors());
-
-//connection db
 connectdb();
 
-//api endpoint
 app.use("/api/food", foodRouter);
 app.use("/images", express.static("uploads"));
 app.use("/api/user", UserRouter);
-
 app.use("/api/cart", cartRouter);
-
 app.use("/api/order", orderRouter);
-
 app.get("/", async (req, res) => {
   res.send("api working");
 });
