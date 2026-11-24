@@ -16,10 +16,8 @@ code {
 @keyframes slideIn {
   0% {
     opacity: 0;
-    /* Starts hidden and to the left */
   }
   100% {
     opacity: 1;
-    /* Ends fully visible and in original position */
   }
 }
