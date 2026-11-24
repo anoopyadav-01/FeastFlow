@@ -62,7 +62,7 @@
 }
 
 .navbar-cart:hover {
-  transform: translateY(0); /* Slides icon up into dead center */
+  transform: translateY(0); 
   opacity: 1;
   transform: scale(1.08);
 }
